@@ -1,1 +1,11 @@
+# General
+*.exe
+
+# Red specific
+libRedRT-defs.r
+libRedRT-extras.r
+libRedRT-include.red
+libRedRT.dll
+
+# Project specific
 hi-modified.png
