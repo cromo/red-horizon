@@ -40,22 +40,7 @@ forth: func [stack env commands /local f][
 ]
 
 push: :append
-pop: func [series /local value][
-    value: first back tail series
-    clear back tail series
-    value
-]
-
-; env: #()
-; put env '+ func [s][push s (pop s) + (pop s)]
-; put env 'swap func [s /local temp1 temp2][
-;     temp1: pop s
-;     temp2: pop s
-;     push s temp1
-;     push s temp2
-; ]
-; put env '. func[s][print pop s]
-; put env <s> func[s][probe s]
+pop: func [series][take/last series]
 
 env: make map! compose [
     + (func [s][push s (pop s) + (pop s)])
