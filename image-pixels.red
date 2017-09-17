@@ -4,9 +4,11 @@ Red [
     Red-Version: 0.6.3
     References: [
         http://www.rebol.com/docs/image.html
+        https://github.com/red/red/issues/2856
     ]
     Takeaways: {
-        Image size cannot be changed in this version of Red.
+        Image size cannot be changed. See Github issue red/red#2856 for more
+        info.
 
         Scaling an image with view uses smoothing; I don't know whether that
         can be disabled.
